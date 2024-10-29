@@ -46,10 +46,10 @@ const Login = () => {
             type="password"
             placeholder="Senha"
             control={control}
-            errorMessage={errors?.password?.message}
+            errorMessage={errors?.password?.message}            
           />
           <Spacing />
-          <Button title="Entrar" />
+          <Button title="Entrar" disabled={!isValid} />
         </Column>
       </LoginContainer>
     </Container>
